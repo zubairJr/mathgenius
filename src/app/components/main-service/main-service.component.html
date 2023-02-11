@@ -1,0 +1,27 @@
+  <section id="courses" class="courses">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Courses</h2>
+        <p>Courses Offers By Math Genius&copy;</p>
+      </div>
+
+      <div class="row">
+    <ng-container *ngFor="let course of courses">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="course-item">
+          <img [src]="course.img" class="img-fluid" alt="course_image">
+          <div class="course-content">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <a href="#contactus">{{course.name}}</a>
+            </div>
+            <p>{{course.description}}</p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+       
+      </div>
+
+    </div>
+  </section>
